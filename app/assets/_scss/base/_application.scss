@@ -22,10 +22,41 @@
  * ---------------------------------------------------------------------------
  */
 
-.header-primary {}
+#content-primary {
+  @include outer-container;
 
-.nav-primary {}
+  #bio {
+    @include span-columns(6);
+    @include shift(3);
 
-.content-primary {}
+    p:first-child {
+      text-align: center;
+    }
+  }
 
-.footer-primary {}
+  #links {
+    @include span-columns(6);
+    @include shift(3);
+
+    margin-top: 20px;
+
+    .block {
+      @include span-columns(2 of 6);
+      text-align: center;
+    }
+  }
+
+  #title {
+    @include media($small-screen) {
+      margin: 0 0 50px 0;
+      text-align: center;
+    }
+    color: #B2DF19;
+    margin: 150px 0 50px 0;
+    text-transform: uppercase;
+  }
+
+  .bio-text {
+    color: #6E6E6E;
+  }
+}
