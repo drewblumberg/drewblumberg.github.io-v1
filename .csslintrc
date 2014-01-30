@@ -33,5 +33,5 @@
   "universal-selector": false,
   "unqualified-attributes": true,
   "vendor-prefix": false,
-  "zero-units": true
+  "zero-units": false
 }
