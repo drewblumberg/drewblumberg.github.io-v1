@@ -24,6 +24,8 @@
 
 #content-primary {
   @include outer-container;
+  font-family: $primary-font;
+  font-size: 1.2em;
 
   #bio {
     @include span-columns(6);
@@ -31,6 +33,13 @@
     @include media($small-screen){
       @include span-columns(2);
       @include shift(0);
+    }
+
+    a {
+      color: $title-green;
+      &:hover {
+        color: $dark-title-green;
+      }
     }
 
     p:first-child {
@@ -42,20 +51,31 @@
     @include span-columns(6);
     @include shift(3);
     @include media($small-screen){
-      margin-top: 10px;
+      @include span-columns(2 of 2);
+      @include shift(0);
+      margin-top: 50px;
     }
-
     margin-top: 50px;
 
     .block {
       @include span-columns(2 of 6);
       @include media($small-screen) {
-        @include span-columns(2);
-        &:not(:last-child) {
-          margin-bottom: 10px;
-        }
+        text-align: center;
       }
       text-align: center;
+    }
+
+    .github {
+      color: black;
+    }
+
+    .linkedin {
+      color: #0E76A8;
+    }
+
+    .twitter {
+      color: #00ACEE;
+      margin-top: 3px;
     }
   }
 
@@ -65,13 +85,13 @@
       text-align: left;
     }
 
-    color: #B2DF19;
-    margin: 60px 0 70px 0;
+    color: $title-green;
+    margin: 60px 0 50px 0;
     text-align: center;
     text-transform: uppercase;
   }
 
   .bio-text {
-    color: #6E6E6E;
+    color: $medium-gray;
   }
 }
