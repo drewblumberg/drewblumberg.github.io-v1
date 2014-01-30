@@ -22,9 +22,23 @@
  * ---------------------------------------------------------------------------
  */
 
+ body {
+  font-family: $primary-font;
+  padding: 5px;
+
+  a {
+      color: $title-green;
+      transition: color 0.5s ease;
+      &:hover {
+        color: $dark-title-green;
+      }
+    }
+ }
+
+
+
 .content-primary {
   @include outer-container;
-  font-family: $primary-font;
   font-size: 1.2em;
 
   .bio {
@@ -33,13 +47,6 @@
     @include media($small-screen){
       @include span-columns(2);
       @include shift(0);
-    }
-
-    a {
-      color: $title-green;
-      &:hover {
-        color: $dark-title-green;
-      }
     }
 
     p:first-child {
@@ -64,16 +71,15 @@
       text-align: center;
     }
 
-    .github {
-      color: black;
-    }
-
-    .linkedin {
-      color: #0E76A8;
-    }
+    // .github, .linkedin, .twitter {
+    //   transition: color 0.5s ease;
+    //   color: $title-green;
+    //   &:hover {
+    //     color: $dark-title-green;
+    //   }
+    // }
 
     .twitter {
-      color: #00ACEE;
       margin-top: 3px;
     }
   }
