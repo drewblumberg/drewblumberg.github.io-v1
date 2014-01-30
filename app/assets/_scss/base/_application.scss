@@ -22,12 +22,12 @@
  * ---------------------------------------------------------------------------
  */
 
-#content-primary {
+.content-primary {
   @include outer-container;
   font-family: $primary-font;
   font-size: 1.2em;
 
-  #bio {
+  .bio {
     @include span-columns(6);
     @include shift(3);
     @include media($small-screen){
@@ -47,7 +47,7 @@
     }
   }
 
-  #links {
+  .links {
     @include span-columns(6);
     @include shift(3);
     @include media($small-screen){
@@ -79,7 +79,7 @@
     }
   }
 
-  #title {
+  .title {
     @include media($small-screen) {
       margin: 0 0 50px 0;
       text-align: left;
