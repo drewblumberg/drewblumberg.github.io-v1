@@ -35,8 +35,6 @@
     }
  }
 
-
-
 .content-primary {
   @include outer-container;
   font-size: 1.2em;
@@ -70,14 +68,6 @@
       }
       text-align: center;
     }
-
-    // .github, .linkedin, .twitter {
-    //   transition: color 0.5s ease;
-    //   color: $title-green;
-    //   &:hover {
-    //     color: $dark-title-green;
-    //   }
-    // }
 
     .twitter {
       margin-top: 3px;
